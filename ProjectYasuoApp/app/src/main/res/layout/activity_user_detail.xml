@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity"
+    android:divider="#000000"
+    android:background="#bb0000">
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/emailText"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/idText"
+        android:layout_below="@+id/emailText"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/majorText"
+        android:layout_below="@+id/idText"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/classText"
+        android:layout_below="@+id/majorText"
+        android:textColor="#ffffff"
+        android:text="New Text" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Lock Status"
+        android:id="@+id/locked"
+        android:layout_below="@+id/classText"
+        android:textColor="#ffffff" />
+
+    <ListView
+
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#bb0000"
+        android:dividerHeight="10px"
+        android:background="#ffffff"
+        android:clickable="true">
+
+    </ListView>
+
+</LinearLayout>

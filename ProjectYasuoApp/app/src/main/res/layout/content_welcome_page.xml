@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id ="@+id/loginlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginbtn"
+            android:src="@mipmap/signin"
+            android:background="#bb0000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regbtn"
+            android:src="@mipmap/registerfinal"
+            android:background="#bb0000"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@mipmap/logoforwelcome"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+

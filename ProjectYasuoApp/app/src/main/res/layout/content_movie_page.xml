@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#bb0000">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id ="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:orientation="vertical"
+        android:background="#bb0000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MoviePage"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:textSize="100px"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/homeButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#ffffff"
+            android:src="@mipmap/homebutton"
+            android:layout_gravity="right" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/searchMovieWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/movieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type Movie Name You Want To Search"
+                android:inputType="text"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb0000">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SearchBtn"
+                android:background="#bb0000"
+                android:src="@mipmap/searchdetails" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SearchMBtn"
+                android:src="@mipmap/searchmovie"
+                android:background="#bb0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MListBtn"
+                android:background="#bb0000"
+                android:src="@mipmap/newmovie" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DListBtn"
+                android:src="@mipmap/newdvd"
+                android:background="#bb0000" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

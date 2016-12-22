@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id ="@+id/loginlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:orientation="vertical" >
+
+        <TextView android:id="@+id/appname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="50dp"
+            android:text="RottenKimchi"
+            android:gravity="center"
+            android:textSize="60dip"
+            android:textColor="#ffffff" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/idWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/userID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User ID"
+                android:inputType="text"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pwWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/userPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:ems="15"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailWrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/userEMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColor="#ffffff"
+                android:text ="\@gatech.edu"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nicknameWrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/userNickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nickname"
+                android:inputType="text"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ageWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/userAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="text"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/userMajor_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/major_arrays"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/userStanding_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/standing_arrays"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/registersmall"
+                android:id="@+id/createAcc"
+                android:background="#bbffff" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backbtn"
+                android:src="@mipmap/cancelsmall"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvSignin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom = "80dp"
+            android:text="Already have an account? Sign in"
+            android:clickable= "true"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</ScrollView>
